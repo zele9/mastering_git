@@ -37,3 +37,7 @@ command to delete a local branch: git branch -d <branch_name>
 command to only create a new branch in my local repo: git branch <branch name>
 command to switch to another branch: git checkout <branch name>
 command to create and auto switch to new branch in local repo: git checkout -b <branch name>
+
+command to go back to a certain commit and stage all changes after that commit: git reset --soft <commit-hash> called a soft reset
+command to go back to a certain commit and leave all changes after that commit in working directory and not staged: git reset <commit-hash> called a mixed reset
+command to go back to a certain commit and delete all changes after that commit: git reset --hard <commit-hash> called a hard reset
