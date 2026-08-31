@@ -1,0 +1,37 @@
+gittutorials % git config --list:
+
+credential.helper=osxkeychain
+user.name=zele9
+user.email=emmanuelataba270@gmail.com
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+
+After making changes to file, the following commands are necessary
+Command to add changed files: git add .
+command to commit files to local repo with a message regarding changes made: git commit -m <messages go here in single quotes>
+then u can go to command to push local repo to remote github origin
+
+
+
+Command to link our local repo to a remote origin ( a repo visually created on GitHub)
+git remote add origin https://github.com/zele9/mastering_git.git <link is GitHub origin http link which serves as origin for command>
+
+Command to push locally committed files to GitHub origin
+git push -u origin main (branch name)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 589 bytes | 589.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/zele9/mastering_git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+command to push new commits to remot repo to a specific branch: git push --set-upstream origin second-branch / alternatively use git push -u origin <branch-name>
+command to see all branches, local and remote, git branch -a and -r to see only remote branches
+command to delete a local branch: git branch -d <branch_name>
+command to only create a new branch in my local repo: git branch <branch name>
+command to create and auto switch to new branch in local repo: git checkout -b <branch name>
