@@ -12,6 +12,7 @@ After making changes to file, the following commands are necessary
 Command to add changed files: git add .
 command to commit files to local repo with a message regarding changes made: git commit -m <messages go here in single quotes>
 then u can go to command to push local repo to remote github origin
+On github, create a pull request for the new branch (if any) 
 
 
 
@@ -19,7 +20,7 @@ Command to link our local repo to a remote origin ( a repo visually created on G
 git remote add origin https://github.com/zele9/mastering_git.git <link is GitHub origin http link which serves as origin for command>
 
 Command to push locally committed files to GitHub origin
-git push -u origin main (branch name)
+git push -u origin main (branch name where changes were made. this automatically creates a new branch in the remote github repo with the same local branch name)
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
 Delta compression using up to 10 threads
@@ -34,4 +35,5 @@ command to push new commits to remot repo to a specific branch: git push --set-u
 command to see all branches, local and remote, git branch -a and -r to see only remote branches
 command to delete a local branch: git branch -d <branch_name>
 command to only create a new branch in my local repo: git branch <branch name>
+command to switch to another branch: git checkout <branch name>
 command to create and auto switch to new branch in local repo: git checkout -b <branch name>
