@@ -1,5 +1,6 @@
-## Heyo niggas, welcome to my git guide!
+## Welcome to Git!
 
 - Yo, Zelle here!
 
--I adding this from `third-branch`
+- This is coming from `dev-ataba`
+- I adding this from `third-branch` <this branch has been deleted for consolidation purposes>
